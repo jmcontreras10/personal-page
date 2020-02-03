@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mat's Page</title>
     <!-- custom CSS-->
     <link rel="stylesheet" type="text/css" href="styles/about.css">
     <!-- Exra resources-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"><!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    
+    <!-- Load d3-cloud -->
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    
 </head>
+
 
 <body>
     <header>
@@ -24,6 +30,11 @@
             </div>
         </nav>
     </header>
+
+    <section class="card-container">
+        <article></article>
+    </section>
+
     <section class="card-container" id="p-info">
 
         <div class="card-tittle">
@@ -56,54 +67,54 @@
         </div>
         <div class="card">
             <div class="line-time">
-                <div id="a-long-l">
+                <div class="a-long-l">
                     2003
                 </div>
-                <div id="a-long-l">
+                <div class="a-long-l">
                     2009
                 </div>                
-                <div id="a-short-l">
+                <div class="a-short-l">
                     2014
                 </div>                
-                <div id="a-short-l">
+                <div class="a-short-l">
                     2015
                 </div>                
-                <div id="a-short-l">
+                <div class="a-short-l">
                     2016
                 </div>                
-                <div id="a-short-l">
+                <div class="a-short-l">
                     2016
                 </div>                
-                <div id="a-short-l">
+                <div class="a-short-l">
                     2018
                 </div>                
-                <div id="a-short-l">
+                <div class="a-short-l">
                     2018
                 </div>
             </div>
             <div class="line-events">
-                <div id="a-long">
+                <div class="a-long">
                     Started Primary School at Instuto san José de la Salle
                 </div>
-                <div id="a-long">
+                <div class="a-long">
                     Started Secondary School at Instuto san José de la Salle
                 </div>
-                <div id="a-short">
+                <div class="a-short">
                     Graduated as <strong>High School Student</strong> at Instuto san José de la Salle
                 </div>
-                <div id="a-short">
+                <div class="a-short">
                     Started Electronical Engineering major at Universidad de los Andes
                 </div>
-                <div id="a-short">
+                <div class="a-short">
                     Started Systems Engineering major at Universidad de los Andes
                 </div>                
-                <div id="a-short">
+                <div class="a-short">
                     Leave Electronical Engineering major at Universidad de los Andes
                 </div>
-                <div id="a-short">
+                <div class="a-short">
                     Started Management minor at Universidad de los Andes
                 </div>
-                <div id="a-short">
+                <div class="a-short">
                     Started MUN preparations at Universidad de los Andes
                 </div>
             </div>
@@ -169,8 +180,32 @@
         <div class="card-tittle">
             Interests
         </div>
+        <div class="card">
+            <div id="inter"></div>
+        </div>
+    </section>
+
+    <section class="card-container" id="form">
+        <div class="card-tittle">
+            Contact
+        </div>
+        <div class="card">
+            <form action="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"> <br>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email"> <br>
+                <label for="email">Your message</label> <br>
+                <textarea rows="4" cols="50">
+                </textarea> <br>
+                <button>
+                    Send
+                </button>
+            </form>
+        </div>
     </section>
 
 </body>
+<script src="scripts/about.js"></script>
 
 </html>

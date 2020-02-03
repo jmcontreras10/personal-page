@@ -1,4 +1,5 @@
 /* On screens that are 992px or less, set the background color to blue */
+
 @media screen and (min-width: 600px) {
     nav a {
         font-size: 18px;
@@ -13,8 +14,37 @@
     .profile {
         width: 15%;
     }
-}
+    
+    .a-long-l {
+        height: 150px;
+        text-align: right;
+        margin-bottom: 50px;
+    }
 
+    .a-long {
+        height: 150px;
+        margin-bottom: 50px;
+    }
+
+    .a-short-l {
+        height: 150px;
+        text-align: right;
+    }
+
+    .a-short {
+        height: 150px
+    }
+
+    .card{
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .card-tittle{
+        width: 50%;
+    }
+
+}
 
 /* On screens that are 600px or less, set the background color to olive */
 
@@ -32,17 +62,48 @@
     nav a {
         font-size: 12px;
     }
+    
+    .a-long-l {
+        margin-bottom: 50px;
+        text-align: right;
+        height: 80px;
+    }
+
+    .a-long {
+        margin-bottom: 50px;
+        height: 80px;
+    }
+
+    .a-short-l {
+        margin: 0 0 20px 0;
+        text-align: right;
+        height: 80px;
+    }
+
+    .a-short {
+        margin: 0 0 20px 0;
+        height: 80px;
+    }
+
+    
+    .card{
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .card-tittle{
+        width: 80%;
+    }
 }
 
-
-html,
-body {
+html, body {
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     height: 100%;
     width: 100%;
 }
+
 nav {
     background-color: #0E0F3B;
     text-align: center;
@@ -85,32 +146,28 @@ nav a:hover {
     color: #0E0F3B;
 }
 
-
-.card-container{
+.card-container {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
 }
 
-.card-tittle{
+.card-tittle {
     align-self: center;
     background-color: #4F51E0;
     color: white;
     display: flex;
-    position : relative;
-    width: 80%;
+    position: relative;
     padding: 1% 5%;
     justify-content: center;
     font-size: 25px;
     box-shadow: 0px 0px 20px gray;
 }
 
-.card{
+.card {
     align-self: center;
     background: white;
     display: flex;
-    width: 80%;
-    max-width: 80%;
     padding: 5%;
     justify-content: center;
     align-items: center;
@@ -145,13 +202,13 @@ h3 {
     color: black;
 }
 
-.social-icon{
+.social-icon {
     border-radius: 50%;
     max-width: 40px;
     padding: 0 20px 0 20px;
 }
 
-.social{
+.social {
     margin: 40px 0 0 0;
     color: black;
     display: flex;
@@ -159,24 +216,24 @@ h3 {
     flex-direction: row;
 }
 
-.info{
+.info {
     flex-direction: row;
     align-self: center;
     justify-content: center;
 }
 
-.info-element{
+.info-element {
     padding: 10px 0;
 }
 
-hr{
+hr {
     border-top: 1px solid gray;
     width: 60%;
 }
 
 /* Card About Education */
 
-.line-time{
+.line-time {
     display: flex;
     height: 100%;
     width: 30%;
@@ -187,7 +244,7 @@ hr{
     flex-direction: column;
 }
 
-.line-events{
+.line-events {
     display: flex;
     height: 100%;
     width: 70%;
@@ -196,63 +253,47 @@ hr{
     flex-direction: column;
 }
 
-#a-long-l{
-    margin: 0 0 80px 0;
-    text-align: right;
-}
-
-#a-long{
-    margin: 0 0 80px 0;
-}
-
-#a-short-l{
-    margin: 0 0 20px 0;
-    text-align: right;
-}
-
-#a-short{
-    margin: 0 0 20px 0;
-}
 
 /* About Working Life Section */
 
-.w-cont{
+.w-cont {
     display: flex;
     align-content: space-around;
     justify-content: center;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
 
-.w-card{
+.w-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
     padding: 8% 5%;
     margin: 30px;
-    background-color: #D3C25E;
+    background-color: rgb(245, 245, 245);
     border-radius: 30px;
-    box-shadow: 1px 1px 10px gray;
+    box-shadow: 2px 2px 5px gray;
 }
 
-.w-card img{
+.w-card img {
     max-width: 50%;
     align-self: center;
 }
 
-h4{
+h4 {
     text-align: center;
     font-size: 10px;
 }
-h5{
+
+h5 {
     text-align: center;
     font-size: 16px;
     margin: 0;
 }
 
-.ico-cont{
+.ico-cont {
     background-color: white;
     width: 100%;
     height: 50%;
@@ -260,37 +301,51 @@ h5{
 
 /* About Hobbies section */
 
-.h-cont{
+.h-cont {
     display: flex;
     align-content: space-around;
     justify-content: center;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
 
-.h-card{
+.h-card {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 5% 5%;
 }
 
-.h-c img{
+.h-c img {
+    margin-top: 3%;
     align-self: center;
-    max-width:90%;
+    max-width: 90%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     box-shadow: 1PX 1PX 10px gray;
+    border-radius: 8%;
 }
 
-.h-c{
-    width: 20%;
+.h-c {
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #D3C25E;
+    background-color: rgb(245, 245, 245);
     border-radius: 8%;
     box-shadow: 1px 1px 10px gray;
     margin: 30px;
+}
+
+input{
+    margin: 5px 10px 5px 5px;
+}
+button{
+    display: flex;
+    background-color: #D3C25E;
+    padding: 5px 10px;
+    border-radius: 15%;
+    margin: 15px 0 0 0;
+    align-self: flex-end;
 }
