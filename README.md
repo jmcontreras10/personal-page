@@ -10,8 +10,7 @@ This page was build completelly in Html, CSS and JS vanilla. You could verify it
 Initially i don't used npm, but now is installed to run ESlint file.
 
 ## Screenshots
-
-<img src="https://ibb.co/zxsgPyq">
+<img src="https://i.ibb.co/54T3sNb/111.png" alt="111" border="0">
 
 <img src="https://ibb.co/Cmn8KT4">
 
