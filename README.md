@@ -12,11 +12,11 @@ Initially i don't used npm, but now is installed to run ESlint file.
 ## Screenshots
 <img src="https://i.ibb.co/54T3sNb/111.png" alt="111" border="0">
 
-<img src="https://ibb.co/Cmn8KT4">
+<img src="https://i.ibb.co/mbHT5Md/222.png" alt="222" border="0">
 
-<img src="https://ibb.co/S0p07LL">
+<img src="https://i.ibb.co/pZpZrmm/333.png" alt="333" border="0">
 
-<img src="https://ibb.co/PN7kCZd">
+<img src="https://i.ibb.co/ZVn9T60/444.png" alt="444" border="0">
 
 ## MIT Licence
 
